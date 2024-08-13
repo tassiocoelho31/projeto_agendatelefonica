@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Imagens/simbolotelefone.png" alt="Telephone Antigo">
+            <h1 id="lista">Lista de Telefones - Agenda Pessoal</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="nome" required placeholder="Nome/Name"/>
+            <input type="tel" id="tel" required placeholder="Número/Number" pattern="\d{2}\d{9}" maxlength="11" title="Digite um número de telefone válido no formato DD + 9 números"/>
+            <button type="submit">Salvar Contato</button>
+        </form>
+        <table cellspacing="0" >
+            <thead>
+                <tr>
+                    <th class="nomename">Nome/Name</th>
+                    <th class="nomename">Número/Number</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="numerosdaagenda">Números na Agenda</td>
+                    <td id="qt-final" >---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
